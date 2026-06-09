@@ -8,7 +8,10 @@
         content="Experiencia de Luis Rodrigo - Conferencista y Dueño de Empresas Vanto, Unite, Q-Zenith.">
     <title>Experiencia | Rodricg30</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts & DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -20,7 +23,8 @@
     <meta property="og:image" content="https://i.imgur.com/HAuq03c.png">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 
 <body>
@@ -139,10 +143,23 @@
         <h2 class="section-title" style="font-size: 2rem;">Propietario de Empresas</h2>
         <div class="grid-container">
 
+            <!-- ChilliCode Agency -->
+            <div class="item-card">
+                <div class="item-visual logo-mode" style="border: 1px solid rgba(0, 200, 150, 0.2); background: rgba(0, 200, 150, 0.03);">
+                    <img src="https://i.imgur.com/QTzmlBC.png" alt="ChilliCode Agency" loading="lazy" style="object-fit: contain;">
+                </div>
+                <div class="item-content">
+                    <h3 style="color: #00c896;">ChilliCode Agency</h3>
+                    <p>Agencia premium de desarrollo de software y creadores de startups SaaS de alto impacto.</p>
+                    <a href="https://chilicode-official.github.io/ChiliCode/" target="_blank" class="card-link" style="border-color: #00c896; color: #00c896;">Visitar Sitio <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
             <!-- Vanto -->
             <div class="item-card">
                 <div class="item-visual logo-mode">
-                    <img src="https://i.imgur.com/Bxt2pj5.png" alt="Vanto">
+                    <img src="https://i.imgur.com/Bxt2pj5.png" alt="Vanto" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3>Vanto</h3>
@@ -152,27 +169,14 @@
                 </div>
             </div>
 
-            <!-- Unite -->
-            <div class="item-card">
-                <div class="item-visual logo-mode">
-                    <img src="https://i.imgur.com/bH4XQTV.png" alt="Unite / Nexus">
-                </div>
-                <div class="item-content">
-                    <h3>Unite</h3>
-                    <p>E-commerce de productos de tecnología.</p>
-                    <a href="https://unitegroupteam.github.io/unite/" target="_blank" class="card-link">Visitar Sitio <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
             <!-- Q-Zenith -->
             <div class="item-card">
                 <div class="item-visual logo-mode">
-                    <img src="https://i.imgur.com/Pzlakl9.png" alt="Q-Zenith">
+                    <img src="https://i.imgur.com/Pzlakl9.png" alt="Q-Zenith" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3>Q-Zenith</h3>
-                    <p>Marca de ropa.</p>
+                    <p>Marca de ropa de diseño exclusivo.</p>
                     <a href="https://unitegroupteam.github.io/q-zenith/" target="_blank" class="card-link">Visitar Sitio
                         <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -181,14 +185,13 @@
             <!-- Bottle Code -->
             <div class="item-card">
                 <div class="item-visual logo-mode pink-aura">
-                    <img src="https://i.imgur.com/PZj6c4l.png" alt="Bottle Code">
+                    <img src="https://i.imgur.com/PZj6c4l.png" alt="Bottle Code" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3 style="color: #ff69b4;">Bottle Code</h3>
-                    <p>Agencia de Programación, integrando a <strong>Viral Wear</strong> y nuestra <strong>Merch
-                            Oficial</strong>.</p>
+                    <p>Agencia de Programación enfocada en la creación de herramientas digitales.</p>
                     <a href="https://bottle-code-rodricg30-shop.fourthwall.com/en-mxn" target="_blank" class="card-link"
-                        style="border-color: #ff69b4; color: #ff69b4;">Visitar Merch Shop
+                        style="border-color: #ff69b4; color: #ff69b4;">Visitar Shop
                         <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -202,98 +205,115 @@
 
         <div class="timeline">
 
+            <!-- ChilliCode Agency -->
+            <div class="timeline-item">
+                <div class="timeline-marker" style="border-color: #00c896;"></div>
+                <div class="timeline-content" style="border-left: 3px solid #00c896; background: rgba(0, 200, 150, 0.03);">
+                    <h3 class="role" style="color: #00c896;">CEO & Founder</h3>
+                    <h4 class="company">ChilliCode Agency</h4>
+                    <ul class="job-details">
+                        <li>Dirección estratégica de mi agencia premium de desarrollo de software y startups.</li>
+                        <li>Lanzamiento y operación de startups SaaS: <strong>GoWash</strong> (digitalización de autolavados) y <strong>Shift</strong> (valet parking inteligente).</li>
+                        <li>Diseño de interfaces optimizadas móviles y experiencia de usuario (Google Certified UX Designer).</li>
+                        <li>Sitio oficial de la agencia: <a href="https://chilicode-official.github.io/ChiliCode/" target="_blank" style="color: #00c896; font-weight: bold;">chilicode.dev</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottle Code Agency -->
             <div class="timeline-item">
                 <div class="timeline-marker" style="border-color: #ff69b4;"></div>
                 <div class="timeline-content pink-aura">
                     <h3 class="role" style="color: #ff69b4;">Founder & Lead Developer</h3>
                     <h4 class="company">Bottle Code Agency</h4>
                     <ul class="job-details">
-                        <li>Dirección estratégica de mi agencia de programación y marca de estilo de vida.</li>
-                        <li>Integración de <strong>Viral Wear</strong> y desarrollo de la línea de merch de la agencia.
-                        </li>
-                        <li>Desarrollo de e-commerce y soluciones de software escalables.</li>
-                        <li>Gestión de clientes premium globales: <a
-                                href="https://bottle-code-rodricg30-shop.fourthwall.com/en-mxn" target="_blank"
-                                style="color: #ff69b4; font-weight: bold;">bottle-code.shop</a></li>
+                        <li>Dirección estratégica de mi agencia de programación enfocada en e-commerce y soluciones a medida.</li>
+                        <li>Desarrollo de tiendas en línea de alto rendimiento y soluciones personalizadas.</li>
+                        <li>Gestión de clientes premium globales.</li>
                     </ul>
                 </div>
             </div>
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <h3 class="role">Social Media Manager & Web Developer</h3>
-                <h4 class="company">Pompi Bar</h4>
-                <ul class="job-details">
-                    <li>Gestión integral de presencia digital (Instagram, Google Business).</li>
-                    <li>Desarrollo y mantenimiento de sitio web corporativo: <a
-                            href="https://unitegroupteam.github.io/Pompi-Bar/" target="_blank"
-                            style="color: var(--accent-color);">Ver Sitio Web</a>.</li>
-                    <li>Estrategias de engagement y posicionamiento local.</li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <h3 class="role">Responsable de Marketing</h3>
-                <h4 class="company">UBVI (antes HausPoint)</h4>
-                <ul class="job-details">
-                    <li>Planificación de contenido estratégico.</li>
-                    <li>Edición de video de alto impacto.</li>
-                    <li>Generación de ideas virales.</li>
-                </ul>
+            <!-- Pompi Bar -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="role">Social Media Manager & Web Developer</h3>
+                    <h4 class="company">Pompi Bar</h4>
+                    <ul class="job-details">
+                        <li>Gestión integral de presencia digital (Instagram, Google Business).</li>
+                        <li>Desarrollo y mantenimiento del sitio web corporativo: <a href="https://unitegroupteam.github.io/Pompi-Bar/" target="_blank" style="color: var(--accent-color);">Ver Sitio Web</a>.</li>
+                        <li>Estrategias de engagement y posicionamiento local.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <h3 class="role">Programador Web con IA</h3>
-                <h4 class="company">UBVI & Unite (antes Techspot)</h4>
-                <ul class="job-details">
-                    <li>Mantenimiento y mejora de páginas web.</li>
-                    <li>Creación de código asistida por IA (ChatGPT 5, Gemini 2.5 Pro).</li>
-                </ul>
+            <!-- UBVI Marketing -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="role">Responsable de Marketing</h3>
+                    <h4 class="company">UBVI (antes HausPoint)</h4>
+                    <ul class="job-details">
+                        <li>Planificación de contenido estratégico y viralización.</li>
+                        <li>Edición de video de alto impacto para diversas plataformas.</li>
+                        <li>Generación y testeo de ideas de contenido interactivo.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <h3 class="role">Creador de Contenido Tech</h3>
-                <h4 class="company">Canal Propio</h4>
-                <ul class="job-details">
-                    <li>Creación de guiones y planificación.</li>
-                    <li>Camarógrafo y Tester de productos.</li>
-                </ul>
+            <!-- UBVI Developer -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="role">Programador Web con IA</h3>
+                    <h4 class="company">UBVI</h4>
+                    <ul class="job-details">
+                        <li>Mantenimiento y mejora continua de páginas web.</li>
+                        <li>Creación de código y optimizaciones asistidas por Inteligencia Artificial de vanguardia.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <h3 class="role">Especialista en Marketing & Automatización IA</h3>
-                <h4 class="company">Notaría Pública</h4>
-                <ul class="job-details">
-                    <li>Automatización de procesos administrativos mediante soluciones de Inteligencia Artificial.
-                    </li>
-                    <li>Implementación de estrategias de marketing digital para captación de clientes.</li>
-                </ul>
+            <!-- Creador de Contenido -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="role">Creador de Contenido Tech</h3>
+                    <h4 class="company">Canal Propio</h4>
+                    <ul class="job-details">
+                        <li>Creación de guiones, edición y planificación de contenido de tecnología y lifestyle.</li>
+                        <li>Tester de productos tecnológicos y creador de reviews interactivos.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <h3 class="role">Asociado de Ventas & Soporte Visual</h3>
-                <h4 class="company">Refaccionaria Automotriz</h4>
-                <ul class="job-details">
-                    <li>Gestión estratégica de inventario y optimización del punto de venta.</li>
-                    <li>Diseño de material gráfico publicitario y gestión de imagen de marca.</li>
-                    <li>Atención al cliente y cierre de ventas técnicas.</li>
-                </ul>
+            <!-- Notaría Pública -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="role">Especialista en Marketing & Automatización IA</h3>
+                    <h4 class="company">Notaría Pública</h4>
+                    <ul class="job-details">
+                        <li>Automatización de procesos administrativos mediante Inteligencia Artificial.</li>
+                        <li>Implementación de estrategias digitales para la captación de clientes de forma automatizada.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+
+            <!-- Refaccionaria Automotriz -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="role">Asociado de Ventas & Soporte Visual</h3>
+                    <h4 class="company">Refaccionaria Automotriz</h4>
+                    <ul class="job-details">
+                        <li>Gestión estratégica de inventario y optimización visual del punto de venta.</li>
+                        <li>Diseño de material gráfico publicitario e identidad de marca.</li>
+                        <li>Atención al cliente y cierre de ventas técnicas cara a cara.</li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
     </section>

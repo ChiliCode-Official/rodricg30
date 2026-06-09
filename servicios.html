@@ -8,7 +8,10 @@
         content="Servicios de Desarrollo Web y Diseño de Alto Impacto. Convierte visitantes en clientes.">
     <title>Servicios | Rodricg30</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts & DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -20,7 +23,8 @@
     <meta property="og:image" content="https://i.imgur.com/HAuq03c.png">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 
 <body>
@@ -83,7 +87,7 @@
             <div class="item-content" style="text-align: center;">
                 <div style="margin-bottom: 20px;">
                     <img src="https://i.imgur.com/PZj6c4l.png" alt="Bottle Code Logo"
-                        style="height: 100px; margin: 0 auto;">
+                        style="height: 100px; margin: 0 auto;" loading="lazy">
                 </div>
                 <h3 style="font-size: 2.5rem; margin-bottom: 20px; color: #ff69b4;">Bottle Code Shop</h3>
                 <p style="font-size: 1.2rem; color: #fff; margin-bottom: 30px; line-height: 1.8;">
@@ -109,7 +113,7 @@
             <div class="item-content" style="text-align: center;">
                 <div style="margin-bottom: 20px;">
                     <img src="https://i.imgur.com/PZj6c4l.png" alt="Bottle Code Logo"
-                        style="height: 100px; margin: 0 auto;">
+                        style="height: 100px; margin: 0 auto;" loading="lazy">
                 </div>
                 <h3 style="font-size: 2.5rem; margin-bottom: 10px; color: #ff69b4;">Bottle Code Agency</h3>
                 <p style="font-size: 1.2rem; color: #fff; margin-bottom: 20px; line-height: 1.8;">

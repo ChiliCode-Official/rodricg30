@@ -7,7 +7,10 @@
     <meta name="description" content="Portafolio de Desarrollo Web - Rodricg30. Diseños modernos y funcionales.">
     <title>Portafolio Web | Rodricg30</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts & DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -19,7 +22,8 @@
     <meta property="og:image" content="https://i.imgur.com/HAuq03c.png">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 
 <body>
@@ -71,97 +75,84 @@
     <section class="section">
         <div class="grid-container">
 
-            <!-- Bottle Code -->
-            <div class="item-card">
-                <div class="item-visual logo-mode pink-aura">
-                    <img src="https://i.imgur.com/PZj6c4l.png" alt="Bottle Code">
+            <!-- ChilliCode Agency -->
+            <div class="item-card" style="border: 1px solid rgba(0, 200, 150, 0.3); background: rgba(0, 200, 150, 0.02);">
+                <div class="item-visual logo-mode" style="border-bottom: 1px solid rgba(0, 200, 150, 0.2);">
+                    <img src="https://i.imgur.com/QTzmlBC.png" alt="ChilliCode Agency" loading="lazy" style="object-fit: contain;">
                 </div>
                 <div class="item-content">
-                    <h3 style="color: #ff69b4;">Bottle Code</h3>
-                    <p>Agencia de Programación Web. Soluciones escalables y diseño UX premium.</p>
-                    <a href="https://bottle-code-rodricg30-shop.fourthwall.com/en-mxn" target="_blank" class="card-link"
-                        style="border-color: #ff69b4; color: #ff69b4;">Ver Tienda <i
+                    <h3 style="color: #00c896;">ChilliCode Agency</h3>
+                    <p>Estudio premium de desarrollo de software, diseño UX y creadores de productos SaaS de alto impacto.</p>
+                    <a href="https://chilicode-official.github.io/ChiliCode/" target="_blank" class="card-link"
+                        style="border-color: #00c896; color: #00c896;">Ver Sitio Web <i
                             class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- GoWash -->
+            <div class="item-card" style="border: 1px solid rgba(255, 127, 0, 0.3); background: rgba(255, 127, 0, 0.02);">
+                <div class="item-visual logo-mode" style="border-bottom: 1px solid rgba(255, 127, 0, 0.2);">
+                    <img src="https://i.imgur.com/seIwnhu.png" alt="GoWash" loading="lazy" style="object-fit: contain;">
+                </div>
+                <div class="item-content">
+                    <h3 style="color: #FF7F00;">GoWash</h3>
+                    <p>SaaS & PWA para digitalizar autolavados. Control de efectivo, inventarios y evidencias legales.</p>
+                    <a href="https://chilicode-official.github.io/GoWash/" target="_blank" class="card-link"
+                        style="border-color: #FF7F00; color: #FF7F00;">Ver Proyecto <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Shift -->
+            <div class="item-card" style="border: 1px solid rgba(0, 200, 150, 0.3); background: rgba(0, 200, 150, 0.02);">
+                <div class="item-visual logo-mode" style="border-bottom: 1px solid rgba(0, 200, 150, 0.2);">
+                    <img src="https://i.imgur.com/8dqhwKO.png" alt="Shift" loading="lazy" style="object-fit: contain;">
+                </div>
+                <div class="item-content">
+                    <h3 style="color: #00C896;">Shift</h3>
+                    <p>SaaS & PWA para valet parking inteligente. Boletos digitales, fotos de inspección y pagos.</p>
+                    <a href="https://chilicode-official.github.io/Shift/" target="_blank" class="card-link"
+                        style="border-color: #00C896; color: #00C896;">Ver Proyecto <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Vanto -->
+            <div class="item-card">
+                <div class="item-visual logo-mode">
+                    <img src="https://i.imgur.com/Bxt2pj5.png" alt="Vanto Project" loading="lazy">
+                </div>
+                <div class="item-content">
+                    <h3>Vanto</h3>
+                    <p>Marca de extensibles y fundas premium de relojes con e-commerce interactivo.</p>
+                    <a href="https://unitegroupteam.github.io/Vanto/" target="_blank" class="card-link">Ver Proyecto <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Q-Zenith -->
+            <div class="item-card">
+                <div class="item-visual logo-mode">
+                    <img src="https://i.imgur.com/Pzlakl9.png" alt="Q-Zenith Project" loading="lazy">
+                </div>
+                <div class="item-content">
+                    <h3>Q-Zenith</h3>
+                    <p>Marca de ropa de diseño exclusivo y e-commerce moderno y rápido.</p>
+                    <a href="https://unitegroupteam.github.io/q-zenith/" target="_blank" class="card-link">Ver Proyecto
+                        <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
             <!-- Vanklein Ink -->
             <div class="item-card">
                 <div class="item-visual logo-mode">
-                    <img src="https://i.imgur.com/INJqIcl.png" alt="Vanklein Ink">
+                    <img src="https://i.imgur.com/INJqIcl.png" alt="Vanklein Ink" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3>Vanklein Ink</h3>
                     <p>Plataforma para agendamiento de citas y vitrina de estudio de tatuajes.</p>
                     <a href="https://unitegroupteam.github.io/vanklein-ink/" target="_blank" class="card-link">Ver
                         Proyecto <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <!-- Cumple Mateo -->
-            <div class="item-card">
-                <div class="item-visual logo-mode">
-                    <!-- Placeholder Icon since no logo provided for this specific one, or generic gift icon -->
-                    <i class="fas fa-birthday-cake" style="font-size: 3rem; color: var(--accent-color);"></i>
-                </div>
-                <div class="item-content">
-                    <h3>Invitaciones Digitales</h3>
-                    <p>Micrositio interactivo para eventos y fiestas infantiles (Ej: Cumple Mateo).</p>
-                    <a href="https://unitegroupteam.github.io/cumple-mateo/" target="_blank" class="card-link">Ver
-                        Proyecto <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <!-- Vanto (Re-featured as Project) -->
-            <div class="item-card">
-                <div class="item-visual logo-mode">
-                    <img src="https://i.imgur.com/Bxt2pj5.png" alt="Vanto Project">
-                </div>
-                <div class="item-content">
-                    <h3>Vanto</h3>
-                    <p>Marca de extensibles y fundas premium de relojes.</p>
-                    <a href="https://unitegroupteam.github.io/Vanto/" target="_blank" class="card-link">Ver Proyecto <i
-                            class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <!-- Unite (Re-featured as Project) -->
-            <div class="item-card">
-                <div class="item-visual logo-mode">
-                    <img src="https://i.imgur.com/bH4XQTV.png" alt="Unite Project">
-                </div>
-                <div class="item-content">
-                    <h3>Unite</h3>
-                    <p>E-commerce de productos de tecnología.</p>
-                    <a href="https://unitegroupteam.github.io/unite/" target="_blank" class="card-link">Ver Proyecto <i
-                            class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <!-- Q-Zenith (Re-featured as Project) -->
-            <div class="item-card">
-                <div class="item-visual logo-mode">
-                    <img src="https://i.imgur.com/Pzlakl9.png" alt="Q-Zenith Project">
-                </div>
-                <div class="item-content">
-                    <h3>Q-Zenith</h3>
-                    <p>Marca de ropa.</p>
-                    <a href="https://unitegroupteam.github.io/q-zenith/" target="_blank" class="card-link">Ver Proyecto
-                        <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <!-- Viral Wear (Division) -->
-            <div class="item-card">
-                <div class="item-visual logo-mode">
-                    <img src="https://i.imgur.com/xeHpiSJ.png" alt="Viral Wear">
-                </div>
-                <div class="item-content">
-                    <h3>Viral Wear</h3>
-                    <p>División de moda urbana de <strong>Bottle Code</strong>. IA & Diseño Web.</p>
-                    <a href="https://bottle-code-rodricg30-shop.fourthwall.com/en-mxn" target="_blank"
-                        class="card-link">Explorar Colección
-                        <i class="fas fa-shopping-bag"></i></a>
                 </div>
             </div>
 
@@ -172,15 +163,43 @@
                 </div>
                 <div class="item-content">
                     <h3>Pompi Bar</h3>
-                    <p>Gestión de Redes, Google Business y desarrollo web.</p>
+                    <p>Desarrollo web y gestión digital completa para restaurante bar.</p>
                     <div style="margin-top: 15px;">
                         <a href="https://unitegroupteam.github.io/Pompi-Bar/" target="_blank" class="card-link"
                             style="margin-right: 15px;">Ver Web <i class="fas fa-external-link-alt"></i></a>
                         <a href="https://www.instagram.com/pompi_bar/" target="_blank"
-                            style="color: #fff; font-size: 1.5rem; text-decoration: none;"><i
+                            style="color: #fff; font-size: 1.5rem; text-decoration: none;" loading="lazy"><i
                                 class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Cumple Mateo -->
+            <div class="item-card">
+                <div class="item-visual logo-mode">
+                    <i class="fas fa-birthday-cake" style="font-size: 3rem; color: var(--accent-color);"></i>
+                </div>
+                <div class="item-content">
+                    <h3>Invitaciones Digitales</h3>
+                    <p>Micrositio interactivo para eventos y fiestas infantiles (Ej: Cumple Mateo).</p>
+                    <a href="https://unitegroupteam.github.io/cumple-mateo/" target="_blank" class="card-link">Ver
+                        Proyecto <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Bottle Code -->
+            <div class="item-card">
+                <div class="item-visual logo-mode pink-aura">
+                    <img src="https://i.imgur.com/PZj6c4l.png" alt="Bottle Code" loading="lazy">
+                </div>
+                <div class="item-content">
+                    <h3 style="color: #ff69b4;">Bottle Code</h3>
+                    <p>Agencia de Programación Web. Soluciones escalables y diseño UX premium.</p>
+                    <a href="https://bottle-code-rodricg30-shop.fourthwall.com/en-mxn" target="_blank" class="card-link"
+                        style="border-color: #ff69b4; color: #ff69b4;">Ver Tienda <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
             </div>
         </div>
     </section>

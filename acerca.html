@@ -8,7 +8,10 @@
         content="Conoce la historia de Luis Rodrigo (Rodricg30). Emprendedor, Diseñador UX y Creador de Contenido.">
     <title>Acerca de Mí | Rodricg30</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts & DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -21,7 +24,8 @@
     <meta property="og:image" content="https://i.imgur.com/HAuq03c.png">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 
 <body>
@@ -106,7 +110,7 @@
                 <!-- Image Visual -->
                 <div class="about-visual">
                     <img src="https://i.imgur.com/25kNvUt.jpeg" alt="Luis Rodrigo - Rodricg30"
-                        class="about-profile-img">
+                        class="about-profile-img" loading="lazy">
                 </div>
             </div>
 
@@ -124,7 +128,7 @@
             <div class="item-card">
                 <div class="item-visual logo-mode" style="height: 250px;">
                     <img src="https://i.imgur.com/nzMD6Bq.jpeg" alt="Google UX Design Certificate"
-                        style="object-fit: cover;" class="zoomable-img">
+                        style="object-fit: cover;" class="zoomable-img" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3>Google UX Design</h3>
@@ -136,7 +140,7 @@
             <div class="item-card">
                 <div class="item-visual logo-mode" style="height: 250px;">
                     <img src="https://i.imgur.com/N9yQ22X.jpeg" alt="Cambridge KET Certificate"
-                        style="object-fit: contain;" class="zoomable-img">
+                        style="object-fit: contain;" class="zoomable-img" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3>Cambridge KET-KEY</h3>
@@ -148,7 +152,7 @@
             <div class="item-card">
                 <div class="item-visual logo-mode" style="height: 250px;">
                     <img src="https://i.imgur.com/KM1Dq3w.png" alt="Canva Visual Suite" style="object-fit: contain;"
-                        class="zoomable-img">
+                        class="zoomable-img" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3>Canva Visual Suite</h3>
@@ -160,7 +164,7 @@
             <div class="item-card">
                 <div class="item-visual logo-mode" style="height: 250px;">
                     <img src="https://i.imgur.com/cT1MMG4.png" alt="Canva Content Creation" style="object-fit: contain;"
-                        class="zoomable-img">
+                        class="zoomable-img" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3>Contenido Irresistible</h3>
@@ -174,8 +178,8 @@
         <h3 class="section-title" style="text-align: center; margin-top: 60px; font-size: 1.5rem;">Insignias
             Profesionales</h3>
         <div style="display: flex; justify-content: center; gap: 30px; margin-top: 30px; flex-wrap: wrap;">
-            <img src="https://i.imgur.com/dZU8tif.png" alt="Badge Visual Suite" style="height: 120px; opacity: 0.9;">
-            <img src="https://i.imgur.com/5W6OOxC.png" alt="Badge Content" style="height: 120px; opacity: 0.9;">
+            <img src="https://i.imgur.com/dZU8tif.png" alt="Badge Visual Suite" style="height: 120px; opacity: 0.9;" loading="lazy">
+            <img src="https://i.imgur.com/5W6OOxC.png" alt="Badge Content" style="height: 120px; opacity: 0.9;" loading="lazy">
         </div>
 
     </section>
