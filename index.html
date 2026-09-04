@@ -2500,6 +2500,318 @@
                 font-size: 1rem;
             }
         }
+
+        /* ── GEMINI STUDENT AMBASSADOR BANNER ── */
+        #gemini-banner {
+            position: relative;
+            z-index: 2;
+            padding: 70px 40px 80px;
+            overflow: visible;
+            background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        body.dark-theme #gemini-banner {
+            background: linear-gradient(180deg, #0b0b18 0%, #07070d 100%);
+            border-color: rgba(66, 133, 244, 0.18);
+        }
+
+        .gemini-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            background: radial-gradient(circle at 50% 0%, rgba(66, 133, 244, 0.09) 0%, rgba(255, 88, 0, 0.05) 50%, transparent 85%);
+            border: 1.5px solid rgba(66, 133, 244, 0.25);
+            border-radius: 36px;
+            padding: 60px 45px;
+            box-shadow: 0 20px 60px rgba(66, 133, 244, 0.08), 0 0 40px rgba(255, 88, 0, 0.05);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            isolation: isolate;
+        }
+
+        body.dark-theme .gemini-container {
+            background: radial-gradient(circle at 50% 0%, rgba(66, 133, 244, 0.16) 0%, rgba(155, 114, 236, 0.1) 45%, rgba(0, 0, 0, 0.3) 80%);
+            border-color: rgba(66, 133, 244, 0.35);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(66, 133, 244, 0.18);
+        }
+
+        /* Floating Resource Assets */
+        .gemini-float-assets {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .gemini-asset {
+            position: absolute;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.12));
+            user-select: none;
+            pointer-events: none;
+            transition: transform 0.4s ease;
+        }
+
+        .gemini-asset-1 {
+            top: 25px;
+            left: 35px;
+            width: 78px;
+            height: 78px;
+            animation: floatGlow 5.5s ease-in-out infinite;
+        }
+
+        .gemini-asset-2 {
+            top: 40px;
+            right: 45px;
+            width: 72px;
+            height: 72px;
+            animation: floatGlow 6.2s ease-in-out infinite 0.8s;
+        }
+
+        .gemini-asset-3 {
+            bottom: 35px;
+            left: 50px;
+            width: 70px;
+            height: 70px;
+            animation: floatGlow 5s ease-in-out infinite 1.4s;
+        }
+
+        .gemini-asset-4 {
+            bottom: 40px;
+            right: 40px;
+            width: 76px;
+            height: 76px;
+            animation: floatGlow 6.8s ease-in-out infinite 2.1s;
+        }
+
+        .gemini-asset-5 {
+            top: 50%;
+            left: 12px;
+            width: 58px;
+            height: 58px;
+            transform: translateY(-50%);
+            animation: floatGlow 7.2s ease-in-out infinite 1s;
+            opacity: 0.85;
+        }
+
+        @keyframes floatGlow {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+            }
+            50% {
+                transform: translateY(-14px) rotate(6deg) scale(1.06);
+            }
+        }
+
+        .gemini-content-wrap {
+            position: relative;
+            z-index: 2;
+            max-width: 740px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Ambassador Header Badge */
+        .gemini-ambassador-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 22px;
+            border-radius: 100px;
+            background: rgba(66, 133, 244, 0.08);
+            border: 1px solid rgba(66, 133, 244, 0.3);
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(66, 133, 244, 0.12);
+        }
+
+        body.dark-theme .gemini-ambassador-badge {
+            background: rgba(66, 133, 244, 0.18);
+            border-color: rgba(66, 133, 244, 0.45);
+        }
+
+        .gemini-student-logo {
+            height: 34px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+        }
+
+        .gemini-badge-text {
+            font-size: 0.86rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            font-family: 'Space Grotesk', sans-serif;
+            background: linear-gradient(135deg, #1a73e8, #9334e8, #ea4335);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gemini-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            letter-spacing: -1.2px;
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text);
+        }
+
+        .gemini-title-gradient {
+            background: linear-gradient(135deg, #1a73e8 0%, #8ab4f8 28%, #a855f7 55%, #FF5800 85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+
+        .gemini-subtitle {
+            font-size: clamp(1rem, 1.8vw, 1.18rem);
+            color: var(--dim);
+            line-height: 1.7;
+            margin-bottom: 38px;
+            max-width: 620px;
+        }
+
+        .gemini-subtitle strong {
+            color: var(--text);
+        }
+
+        /* Giant CTA Button */
+        .gemini-giant-cta {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 22px 52px;
+            font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #1a73e8 0%, #4285f4 35%, #9334e8 75%, #ea4335 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 4s ease infinite;
+            box-shadow: 0 14px 45px rgba(66, 133, 244, 0.4), 0 0 35px rgba(147, 52, 232, 0.35);
+            transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.28s;
+            border: 2px solid rgba(255, 255, 255, 0.35);
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gemini-giant-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+            transition: left 0.75s ease;
+        }
+
+        .gemini-giant-cta:hover::before {
+            left: 100%;
+        }
+
+        .gemini-giant-cta:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 20px 60px rgba(66, 133, 244, 0.6), 0 0 50px rgba(147, 52, 232, 0.5);
+        }
+
+        .gemini-giant-cta:active {
+            transform: translateY(-2px) scale(0.99);
+        }
+
+        .gemini-cta-icon {
+            font-size: 1.4em;
+            animation: sparkTilt 2s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes sparkTilt {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.2) rotate(15deg); }
+        }
+
+        .gemini-footer-perk {
+            margin-top: 20px;
+            font-size: 0.86rem;
+            color: var(--dim);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .gemini-footer-perk i {
+            color: #009B48;
+        }
+
+        @media (max-width: 860px) {
+            #gemini-banner {
+                padding: 50px 20px 60px;
+            }
+            .gemini-container {
+                padding: 40px 18px 30px;
+                border-radius: 28px;
+            }
+            .gemini-asset-1 {
+                top: 10px;
+                left: 10px;
+                width: 44px;
+                height: 44px;
+            }
+            .gemini-asset-2 {
+                top: 10px;
+                right: 10px;
+                width: 42px;
+                height: 42px;
+            }
+            .gemini-asset-3 {
+                bottom: 8px;
+                left: 8px;
+                width: 38px;
+                height: 38px;
+                opacity: 0.75;
+            }
+            .gemini-asset-4 {
+                bottom: 8px;
+                right: 8px;
+                width: 40px;
+                height: 40px;
+                opacity: 0.75;
+            }
+            .gemini-asset-5 {
+                display: none;
+            }
+            .gemini-giant-cta {
+                width: 100%;
+                max-width: 340px;
+                padding: 16px 20px;
+                font-size: 1.15rem;
+                gap: 10px;
+            }
+            .gemini-footer-perk {
+                margin-top: 16px;
+                font-size: 0.75rem;
+                padding: 0 10px;
+            }
+        }
     </style>
 </head>
 
@@ -2554,6 +2866,7 @@
             <div class="sliding-nav-container" id="slidingNav">
                 <nav>
                     <ul class="nav-links" id="navLinks">
+                        <li><a href="#gemini-banner" style="color: #4285F4 !important; font-weight: 700;"><i class="fas fa-sparkles" style="margin-right: 4px;"></i>Gemini Pro</a></li>
                         <li class="active"><a href="#about">Sobre Mí</a></li>
                         <li><a href="#ecosystem">Chili Code</a></li>
                         <li><a href="#trajectory">Trayectoria</a></li>
@@ -2621,6 +2934,52 @@
                         <button class="cbtn cbtn-solve btn-m" id="btnSolve">Resolver</button>
                     </div>
                     <div class="cube-hint">Arrastra para rotar &bull; botones para mezclar/resolver</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════ GEMINI STUDENT AMBASSADOR BANNER ════════ -->
+        <section id="gemini-banner">
+            <div class="gemini-container up">
+                <!-- Floating Google / Gemini Elements Around Container -->
+                <div class="gemini-float-assets" aria-hidden="true">
+                    <img src="https://i.imgur.com/KzaRW7U.png" alt="" class="gemini-asset gemini-asset-1" loading="lazy">
+                    <img src="https://i.imgur.com/kJRXxM4.png" alt="" class="gemini-asset gemini-asset-2" loading="lazy">
+                    <img src="https://i.imgur.com/lm7LZnp.png" alt="" class="gemini-asset gemini-asset-3" loading="lazy">
+                    <img src="https://i.imgur.com/5x6hpuO.png" alt="" class="gemini-asset gemini-asset-4" loading="lazy">
+                    <img src="https://i.imgur.com/5uM4Xcr.png" alt="" class="gemini-asset gemini-asset-5" loading="lazy">
+                </div>
+
+                <div class="gemini-content-wrap">
+                    <!-- Google Student Ambassador Badge -->
+                    <div class="gemini-ambassador-badge">
+                        <img src="https://i.imgur.com/5YxtwrA.png" alt="Google Students Logo" class="gemini-student-logo" loading="lazy">
+                        <span class="gemini-badge-text">Estudiante Embajador de Google</span>
+                    </div>
+
+                    <!-- Title -->
+                    <h2 class="gemini-title">
+                        Potencia tus estudios con <br class="desktop-only">
+                        <span class="gemini-title-gradient">Google Gemini</span>
+                    </h2>
+
+                    <!-- Subtitle -->
+                    <p class="gemini-subtitle">
+                        Como <strong>Estudiante Embajador de Google</strong>, te invito a desbloquear el modelo de IA más avanzado del mundo para investigar, programar y resolver tareas complejas a máxima velocidad.
+                    </p>
+
+                    <!-- Giant CTA Button -->
+                    <a href="https://gemini.google/students/" target="_blank" rel="noopener noreferrer" class="gemini-giant-cta btn-m" id="btnGeminiPlus">
+                        <span class="gemini-cta-icon">✦</span>
+                        <span>Gemini Plus Gratis!</span>
+                        <i class="fas fa-arrow-right" style="font-size: 0.9em;"></i>
+                    </a>
+
+                    <!-- Perk indicator -->
+                    <div class="gemini-footer-perk">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Acceso oficial para estudiantes &bull; 100% verificado por Google</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -3459,7 +3818,7 @@
                     gsap.to(targetCursor, { scale: 1, duration: 0.2 });
                 });
                 
-                const targetSelector = '.cert-card, .eco-card, .btn-p, .btn-s, .cbtn, .f-btn, .social-icon, .paper-link, .proj-link';
+                const targetSelector = '.gemini-giant-cta, .cert-card, .eco-card, .btn-p, .btn-s, .cbtn, .f-btn, .social-icon, .paper-link, .proj-link';
                 
                 const updateCorners = () => {
                     if (!activeTarget) return;
